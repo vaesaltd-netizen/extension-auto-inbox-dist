@@ -7,11 +7,10 @@
     "default_title": "Noti Inbox Tools",
     "default_icon": { "128": "icons/icon128.png" }
   },
-  "side_panel": { "default_path": "sidepanel.html" },
   "background": { "service_worker": "js/background.js" },
   "icons": { "128": "icons/icon128.png" },
   "permissions": [
-    "storage", "tabs", "activeTab", "scripting", "sidePanel", "cookies",
+    "storage", "tabs", "activeTab", "scripting", "cookies",
     "declarativeNetRequest", "declarativeNetRequestFeedback", "downloads"
   ],
   "host_permissions": [
