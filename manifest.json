@@ -1,0 +1,26 @@
+{
+  "name": "Noti Inbox Tools Free",
+  "description": "Công cụ quét & gửi tin nhắn hàng loạt đến khách hàng đã inbox Fanpage hoặc nick cá nhân — 100% chạy offline trên trình duyệt. Phiên bản miễn phí.",
+  "version": "2.2.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Noti Inbox Tools",
+    "default_icon": { "128": "icons/icon128.png" }
+  },
+  "side_panel": { "default_path": "sidepanel.html" },
+  "background": { "service_worker": "js/background.js" },
+  "icons": { "128": "icons/icon128.png" },
+  "permissions": [
+    "storage", "tabs", "activeTab", "scripting", "sidePanel", "cookies",
+    "declarativeNetRequest", "declarativeNetRequestFeedback", "downloads"
+  ],
+  "host_permissions": [
+    "https://*.facebook.com/*", "https://facebook.com/*",
+    "*://mbasic.facebook.com/*", "https://business.facebook.com/*",
+    "https://upload.facebook.com/*", "https://upload-business.facebook.com/*",
+    "https://*.fbcdn.net/*", "https://noti.vn/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{ "id": "ruleset_1", "enabled": true, "path": "rules.json" }]
+  }
+}

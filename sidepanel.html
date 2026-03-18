@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noti Inbox Tools Free</title>
+  <meta name="version" content="2.2.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/sidepanel.css">
+</head>
+<body>
+  <div class="app">
+    <!-- ===== HERO HEADER ===== -->
+    <header class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <img src="https://noti.vn/image/new/logo-duong-ban.png" class="hero-logo" onerror="this.src='icons/icon128.png'">
+        <div class="hero-text">
+          <h1 class="hero-title">Noti Inbox Tools</h1>
+          <p class="hero-sub">Quét & gửi tin nhắn hàng loạt trên Fanpage hoặc nick cá nhân · <span id="app-ver">v2.2.0</span></p>
+        </div>
+      </div>
+      <div class="hero-badge" id="fb-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">Kiểm tra...</span>
+      </div>
+    </header>
+
+    <!-- ===== BANNER THÔNG BÁO ===== -->
+    <a id="noti-free-banner" class="noti-free-banner" href="https://noti.vn/" target="_blank">
+      Noti Inbox Tools Free by: noti.vn
+    </a>
+
+    <!-- ===== TAB BAR ===== -->
+    <nav class="tabbar">
+      <button class="tab active" data-tab="scan">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><line x1="7" y1="12" x2="17" y2="12"/></svg>
+        Quét khách hàng
+      </button>
+      <button class="tab" data-tab="send">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        Gửi tin nhắn
+      </button>
+    </nav>
+
+    <!-- ===== MAIN SCROLL AREA ===== -->
+    <main class="main" id="main-content"></main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      Phát triển bởi <a href="https://noti.vn" target="_blank">Noti.vn</a> · 100% chạy Offline trên trình duyệt
+      <div style="margin-top:4px"><a href="https://zalo.me/g/qxep3egmnda3brjedffd" target="_blank">Tham gia nhóm Zalo</a> để nhận bản cập nhật mới nhất</div>
+    </footer>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/fb-api.js"></script>
+  <script src="js/message-sender.js"></script>
+  <script src="js/sidepanel.js"></script>
+</body>
+</html>
