@@ -17,8 +17,13 @@
     "https://*.facebook.com/*", "https://facebook.com/*",
     "*://mbasic.facebook.com/*", "https://business.facebook.com/*",
     "https://upload.facebook.com/*", "https://upload-business.facebook.com/*",
-    "https://*.fbcdn.net/*", "https://noti.vn/*"
+    "https://*.fbcdn.net/*", "https://noti.vn/*",
+    "https://pages.fm/*", "https://pancake.vn/*", "https://*.pancake.vn/*"
   ],
+  "web_accessible_resources": [{
+    "resources": ["sidepanel.html", "css/*", "js/*", "icons/*"],
+    "matches": ["https://*.facebook.com/*", "https://facebook.com/*", "*://mbasic.facebook.com/*", "https://business.facebook.com/*"]
+  }],
   "declarative_net_request": {
     "rule_resources": [{ "id": "ruleset_1", "enabled": true, "path": "rules.json" }]
   }

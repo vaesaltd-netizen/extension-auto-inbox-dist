@@ -13,6 +13,7 @@
     <!-- ===== HERO HEADER ===== -->
     <header class="hero">
       <div class="hero-bg"></div>
+      <button id="btn-close-panel" title="Đóng" style="position:absolute;top:8px;right:8px;z-index:10;background:rgba(255,255,255,0.2);border:none;border-radius:50%;width:28px;height:28px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;line-height:1;transition:background .2s" onmouseover="this.style.background='rgba(255,255,255,0.4)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">&times;</button>
       <div class="hero-content">
         <img src="https://noti.vn/image/new/logo-duong-ban.png" class="hero-logo" onerror="this.src='icons/icon128.png'">
         <div class="hero-text">
@@ -26,11 +27,6 @@
       </div>
     </header>
 
-    <!-- ===== BANNER THÔNG BÁO ===== -->
-    <a id="noti-free-banner" class="noti-free-banner" href="https://noti.vn/" target="_blank">
-      Noti Inbox Tools Free by: noti.vn
-    </a>
-
     <!-- ===== TAB BAR ===== -->
     <nav class="tabbar">
       <button class="tab active" data-tab="scan">
@@ -40,6 +36,10 @@
       <button class="tab" data-tab="send">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         Gửi tin nhắn
+      </button>
+      <button class="tab" data-tab="templates">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        Mẫu tin nhắn
       </button>
     </nav>
 
@@ -55,6 +55,8 @@
 
   <script src="js/utils.js"></script>
   <script src="js/fb-api.js"></script>
+  <script src="js/pancake-api.js"></script>
+  <script src="js/template-db.js"></script>
   <script src="js/message-sender.js"></script>
   <script src="js/sidepanel.js"></script>
 </body>
