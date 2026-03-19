@@ -1,10 +1,10 @@
 {
-  "name": "Noti Inbox Tools Free",
+  "name": "Vaesa Inbox Tools Free",
   "description": "Công cụ quét & gửi tin nhắn hàng loạt đến khách hàng đã inbox Fanpage hoặc nick cá nhân — 100% chạy offline trên trình duyệt. Phiên bản miễn phí.",
   "version": "2.2.0",
   "manifest_version": 3,
   "action": {
-    "default_title": "Noti Inbox Tools",
+    "default_title": "Vaesa Inbox Tools",
     "default_icon": { "128": "icons/icon128.png" }
   },
   "background": { "service_worker": "js/background.js" },
@@ -17,7 +17,7 @@
     "https://*.facebook.com/*", "https://facebook.com/*",
     "*://mbasic.facebook.com/*", "https://business.facebook.com/*",
     "https://upload.facebook.com/*", "https://upload-business.facebook.com/*",
-    "https://*.fbcdn.net/*", "https://noti.vn/*",
+    "https://*.fbcdn.net/*", "https://vaesa.vn/*",
     "https://pages.fm/*", "https://pancake.vn/*", "https://*.pancake.vn/*"
   ],
   "web_accessible_resources": [{
